@@ -28,7 +28,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
             <artifactId>osgi-service</artifactId>
             <version>1.0-SNAPSHOT</version>
             <classifier>classes</classifier>
-            <scope>test</scope>
+            <!--scope>test</scope-->
         </dependency>
     </dependencies>
   <build>
