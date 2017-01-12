@@ -80,7 +80,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
           <instructions>
             <!--Export-Package>${project.groupId}.api</Export-Package-->
             <Import-Package>
-            javax.servlet;version="3.1.0",javax.servlet.http;version="3.1.0",org.osgi.framework</Import-Package>
+            javax.servlet;version="2.5",javax.servlet.http;version="2.5",org.osgi.framework</Import-Package>
             <Bundle-SymbolicName>
             ${project.artifactId}</Bundle-SymbolicName>
             <Bundle-ClassPath>
@@ -89,8 +89,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
             <Embed-Dependency>
             *;scope=compile|runtime;</Embed-Dependency>
             <Embed-Transitive>true</Embed-Transitive>
-            <Web-ContextPath>/hello</Web-ContextPath>
-            <Webapp-Context>hello</Webapp-Context>
+            <Web-ContextPath>/osgi-service</Web-ContextPath>
+            <Webapp-Context>osgi-service</Webapp-Context>
             <Service-Component>
             OSGI-INF/simpleservice.xml</Service-Component>
           </instructions>

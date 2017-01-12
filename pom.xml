@@ -10,12 +10,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
   <packaging>pom</packaging>
   <name>Osgi declartive service and client</name>
   <properties>
-    <java.version>1.8</java.version>
+    <java.version>1.7</java.version>
     <junit.version>4.12</junit.version>
     <compiler.mvn.plugin.version>3.3</compiler.mvn.plugin.version>
     <bundle.mvn.plugin.version>3.2.0</bundle.mvn.plugin.version>
     <war.mvn.plugin.version>3.0.0</war.mvn.plugin.version>
-    <servlet.version>3.1.0</servlet.version>
+    <servlet.version>3.0.1</servlet.version>
     <jetty-plugin-version>6.1.10</jetty-plugin-version>
   </properties>
   <modules>
@@ -71,6 +71,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
       <artifactId>javax.servlet-api</artifactId>
       <version>${servlet.version}</version>
     </dependency>
+    <dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+</dependency>
+<dependency>
+    <groupId>org.glassfish</groupId>
+    <artifactId>osgi-cdi-api</artifactId>
+    <version>3.2-b03</version>
+</dependency>
     </dependencies>
   </dependencyManagement>
 </project>
