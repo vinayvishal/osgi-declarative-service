@@ -16,8 +16,8 @@ import com.example.api.SimpleService;
 @WebServlet(urlPatterns={"/hello"})
 public class HelloWorld extends HttpServlet {
 
-    @Resource(mappedName="decl-service-2")
-//	@Inject @OSGiService(dynamic=true)
+//    @Resource(mappedName="decl-service-2")
+	@Inject @OSGiService(dynamic=true)
     SimpleService simpleService;
   
     public void doGet(HttpServletRequest req, HttpServletResponse res)
